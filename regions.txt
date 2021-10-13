@@ -4,13 +4,11 @@ WEST
 - Los Angeles
 - San Fran
 - Seattle
-
-SOUTHWEST
 - Albuquerque
 - Phoenix
 - Las Vegas
 
-SOUTHEAST
+SOUTH
 - Dallas
 - Miami
 - Atlanta
