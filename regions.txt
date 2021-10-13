@@ -1,0 +1,32 @@
+Regions/Cities:
+
+WEST
+- Los Angeles
+- San Fran
+- Seattle
+
+SOUTHWEST
+- Albuquerque
+- Phoenix
+- Las Vegas
+
+SOUTHEAST
+- Dallas
+- Miami
+- Atlanta
+- Nashville
+- New Orleans
+- Charlotte
+
+MIDWEST
+- Chicago
+- St Louis
+- Detroit
+- Indianapolis
+- Cincinati
+
+NORTHEAST
+- Washington
+- Philadelphia
+- New York City
+- Boston
