@@ -36,4 +36,5 @@ midwest <- midwest %>%
   count(word, sort=TRUE)
 
 View(midwest)
+
 ```
