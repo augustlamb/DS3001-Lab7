@@ -1,0 +1,39 @@
+---
+title: "midwest_text"
+author: "Catherine Schuster"
+date: "10/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Midwest
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gutenbergr)
+library(textdata)
+save.image("tidytext.RData")
+```
+
+```{r}
+midwest <- read_lines("/Users/catherineschuster/Desktop/Fall 2021/DS 3001/DS-3001-Main/07_text_mining/DS3001-Lab7/midwest.txt")
+
+midwest <- tibble(midwest)
+View(midwest)
+
+midwest$midwest <- as.character(midwest$midwest)
+
+View(midwest)
+
+midwest <- midwest %>%
+  unnest_tokens(word, midwest)%>%
+  anti_join(stop_words)%>% 
+  count(word, sort=TRUE)
+
+View(midwest)
+```
