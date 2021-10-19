@@ -1,0 +1,158 @@
+---
+title: "DS 3001 Lab 7"
+author: "Kate Douglass"
+date: "10/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gutenbergr)
+library(textdata)
+```
+
+# Reading in Articles - Northeast Region
+
+I copy and pasted articles into text files.
+I have four from the New York Times, two from The Hartford Courant, two from The Keene Sentinental (NH) and two from Bangor Daily News (Maine).
+```{r}
+a1 <- read_lines("a1.txt")
+a2 <- read_lines("a2.txt")
+a3 <- read_lines("a3.txt")
+a4 <- read_lines("a4.txt")
+a5 <- read_lines("a5.txt")
+a6 <- read_lines("a6.txt")
+a7 <- read_lines("a7.txt")
+a8 <- read_lines("a8.txt")
+a9 <- read_lines("a9.txt")
+a10 <- read_lines("a10.txt")
+
+northeast<-read_lines("northeast.txt")
+```
+
+# Word Frequencies
+
+```{r}
+#creating a function to find the frequencies of each word in each article
+func1 <- function(x){
+  x<-tibble(x)
+  x<-x %>%
+  unnest_tokens(word,x)%>%
+  anti_join(stop_words)%>% 
+  count(word, sort=TRUE)
+}
+
+a1<-func1(a1)
+a2<-func1(a2)
+a3<-func1(a3)
+a4<-func1(a4)
+a5<-func1(a5)
+a6<-func1(a6)
+a7<-func1(a7)
+a8<-func1(a8)
+a9<-func1(a9)
+a10<-func1(a10)
+northeast<-func1(northeast)
+```
+
+
+# Sentiment Analysis
+
+```{r, include=FALSE}
+get_sentiments('afinn') #several different values
+get_sentiments('nrc') #several different categories
+get_sentiments('bing') #positive or negative
+```
+
+```{r}
+a1_afinn <- a1 %>%
+  inner_join(get_sentiments("afinn"))
+a1_nrc <- a1 %>%
+  inner_join(get_sentiments("nrc"))
+a1_bing <- a1 %>%
+  inner_join(get_sentiments("bing"))
+
+afinnfunc<-function(x){
+  x%>%inner_join(get_sentiments("afinn"))
+}
+nrcfunc<-function(x){
+  x%>%inner_join(get_sentiments("nrc"))
+}
+bingfunc<-function(x){
+    x%>%inner_join(get_sentiments("bing"))
+}
+
+a2_afinn<-afinnfunc(a2)
+a2_nrc<-nrcfunc(a2)
+a2_bing<-bingfunc(a2)
+
+a3_afinn<-afinnfunc(a3)
+a3_nrc<-nrcfunc(a3)
+a3_bing<-bingfunc(a3)
+
+a4_afinn<-afinnfunc(a2)
+a4_nrc<-nrcfunc(a2)
+a4_bing<-bingfunc(a2)
+
+a5_afinn<-afinnfunc(a2)
+a5_nrc<-nrcfunc(a2)
+a5_bing<-bingfunc(a2)
+
+a6_afinn<-afinnfunc(a2)
+a6_nrc<-nrcfunc(a2)
+a6_bing<-bingfunc(a2)
+
+a7_afinn<-afinnfunc(a2)
+a7_nrc<-nrcfunc(a2)
+a7_bing<-bingfunc(a2)
+
+a8_afinn<-afinnfunc(a2)
+a8_nrc<-nrcfunc(a2)
+a8_bing<-bingfunc(a2)
+
+a9_afinn<-afinnfunc(a2)
+a9_nrc<-nrcfunc(a2)
+a9_bing<-bingfunc(a2)
+
+a10_afinn<-afinnfunc(a10)
+a10_nrc<-nrcfunc(a10)
+a10_bing<-bingfunc(a10)
+
+northeast_afinn<-afinnfunc(northeast)
+northeast_nrc<-nrcfunc(northeast)
+northeast_bing<-bingfunc(northeast)
+```
+
+# Reading in Articles - Northeast Region
+
+I copy and pasted articles into a text file.
+I have four from the New York Times, two from The Hartford Courant, two from The Keene Sentinental (NH) and two from Bangor Daily News (Maine).
+```{r}
+northeast<-read_lines("northeast.txt")
+```
+
+# Word Frequencies
+
+```{r}
+northeast<-tibble(northeast)
+northeast<-northeast%>%unnest_tokens(word,northeast)%>%anti_join(stop_words)%>%count(word, sort=TRUE)
+```
+
+
+# Sentiment Analysis
+
+```{r}
+northeast_afinn <- northeast %>%
+  inner_join(get_sentiments("afinn"))
+northeast_nrc <- northeast %>%
+  inner_join(get_sentiments("nrc"))
+northeast_bing <- northeast %>%
+  inner_join(get_sentiments("bing"))
+```
+
