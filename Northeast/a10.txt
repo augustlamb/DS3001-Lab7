@@ -1,0 +1,65 @@
+President Donald Trump is expected to issue an executive order soon to reverse Obama-era rules to cut carbon pollution, including a moratorium on leasing public lands for coal mining and a plan to reduce carbon emissions from power plants.
+
+
+Trump and his appointees argue that these steps will bring coal miners' jobs back (although coal industry job losses reflect competition from cheap natural gas, not regulations that have yet to take effect). But they ignore the fact that mitigating climate change will produce large economic gains.
+
+
+While burning fossil fuels produces benefits, such as powering the electric grid and fueling cars, it also generates widespread costs to society -- including damages from climate change that affect people around the world now and in the future. Public policies that reduce carbon pollution deliver benefits by avoiding these damages.
+
+
+Since the Reagan administration, federal agencies have been required to enact only regulations whose potential benefits to society justify or outweigh their potential costs. To quantify benefits from acting to curb climate change, the U.S. government developed a formal measure in 2009 of the value of reducing carbon pollution, which is referred to as the social cost of carbon, or SCC. Currently, federal agencies use an SCC figure of about $40 per ton in today's dollars.
+
+
+Now the Trump administration and critics in Congress may reduce this figure or even stop using it. Environmental Protection Agency Administrator Scott Pruitt's recent comment that carbon dioxide is not "a primary contributor" to climate change suggests that Pruitt may challenge the agency's 2009 finding that carbon emissions are pollutants and threaten human health.
+
+
+As an economist for the White House, I was a member of the working group that developed the first government-wide SCC estimate. We can always improve our processes for estimating and using the SCC, but getting rid of it would be a mistake. A well-functioning democracy needs transparency about the economic benefits of investments driven by public policy -- as well as the benefits we give up when we walk away from making these investments.The value of avoiding hurricanes, wildfires
+
+
+Scientists widely agree that carbon dioxide emissions, primarily from burning fossil fuels, pose significant risks to Earth's climate. Intuitively, it makes sense that reducing carbon emissions benefits society by reducing risks of flooding, wildfires, storms and other impacts associated with severe climate change.
+
+
+We can estimate the benefits of many goods and services, from pop music to recreation, from the prices people pay for them in markets. But valuing environmental benefits is not so simple. Americans can't go to the store and buy a stable climate.
+
+
+Carbon pollution drives global warming that causes many different impacts on the natural and built environment and human health. Because carbon emissions have such broad and diverse impacts, scholars have developed models to characterize the economic benefits (or costs) of reducing them.
+
+
+Current U.S. government practice draws from three peer-reviewed integrated assessment models. An integrated assessment model represents a chain of events, starting with economic activities that involve fossil fuel combustion. This generates carbon emissions, which contribute to climate change.
+
+
+And climate change causes outcomes that can be measured in monetary terms. For example, rising carbon pollution will increase the likelihood of lower agricultural yields, threaten public health through heat stress, and damage infrastructure through floods and intense storms.Thousands of scenarios
+
+
+The social cost of carbon represents the damages of 1 ton of carbon dioxide emitted into the air. To estimate it, economists run models that forecast varying levels of carbon dioxide emissions. They can then model and compare two forecasts -- one with slightly higher emissions than the other. The difference in total climate change damages represents the social cost of carbon.
+
+
+Carbon pollution can remain in the atmosphere for up to 200 years, so these models are run over a century or more in order to account for long-term damages that carbon emissions impose on society.
+
+
+SCC estimates are based on chains of events that include many uncertainties -- for example, how many tons of carbon will be emitted in a given year, the amount of warming that will result, and how severely this warming will exacerbate risks like floods and heat waves. Since we cannot predict any single scenario with certainty, the U.S. government has modeled hundreds of thousands of different scenarios to produce its SCC estimates.
+
+
+Some model scenarios, based on admittedly extreme assumptions, produce negative SCC estimates; that is, they find that carbon pollution is good for the planet. But the vast majority of scenarios show that carbon pollution is bad for the planet, and that on average, every ton of carbon dioxide emitted into the atmosphere imposes damages equal to about $40 in today's dollars.Balancing costs, benefits of regulations
+
+
+The federal government began calculating a social cost of carbon after the U.S. Court of Appeals for the Ninth Circuit ruled in 2007 that the U.S. Department of Transportation had to account for climate benefits from its regulations to improve automobile fuel economy. Environmental groups and a dozen states challenged the regulations, in part because the Bush administration had valued the benefits of cutting carbon dioxide emissions at zero.
+
+
+In response, the Obama administration created a working group in 2009 with officials from 12 agencies to develop the federal government's first official SCC estimate. Our initial figure of $25 for 2010 was updated in 2013, 2015 and 2016, reflecting updates in the underlying models.
+
+
+Agencies have used these estimates in benefit-cost analyses for scores of federal regulations, including the Environmental Protection Agency's Clean Power Plan, the Department of Transportation's medium and heavy-duty vehicle fuel economy standards, and the U.S. Department of Energy's minimum efficiency standard for refrigerators and freezers. Some of these studies were required only by executive order, but others were required by law. Unless the authorizing statutes are amended, the Trump administration will have to produce analyses accounting for carbon pollution reduction benefits if it wants to issue new regulations that can withstand legal challenges.
+
+
+The Trump administration could continue to use SCC estimates in regulatory evaluations, but water them down. For example, some scholars have called for focusing only on domestic benefits -- as opposed to total global benefits -- of reducing carbon pollution in the United States. Emitting a ton of carbon imposes damages in the U.S. and around the world, just as a ton emitted in Beijing imposes damages on the U.S. and other countries around the world. Considering only the domestic impacts of carbon pollution could lower the SCC by three-quarters.
+
+
+But if the U.S. ignores the benefits of reducing carbon pollution that other countries enjoy, then those other countries may follow suit and consider only how cutting emissions will benefit them internally. This approach ignores the strategic value that serves as the primary motivation for countries to work together to combat climate change. The world would achieve much greater emissions reductions and greater net economic benefits if countries implement policies based on the global social cost of carbon instead of a domestic-only SCC.
+
+
+As climate change science and economics continue to evolve, our tools for estimating benefits from reducing carbon pollution will need to evolve and improve. In January the National Academies of Sciences published a report that lays out an extensive research agenda for improving the estimation and use of the social cost of carbon.
+
+
+The federal government has used used benefit-cost analysis to calculate society's bottom line from regulations for decades. So far, the Trump administration appears to be focused solely on costs -- an approach that maximizes the corporate bottom line, but leaves the public out of the equation.
+
