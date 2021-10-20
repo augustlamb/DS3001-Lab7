@@ -54,3 +54,5 @@ table(west_sentiment_nrc$sentiment)
 View(west_sentiment_afinn)
 ```
 
+
+

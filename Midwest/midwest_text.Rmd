@@ -56,5 +56,6 @@ table(midwest_sentiment_nrc$sentiment)
 
 View(midwest_sentiment_afinn)
 ```
-
+ 
+ 
 
