@@ -9,9 +9,52 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Summary of all regions
+# Summary 
 
 Each individual in our group was assigned one region to select 10 news articles and op-eds to pull analyses from, using positive and negative sentiment outputs as well as word frequencies. Below are our sentiment findings for each region (North, South, Midwest, and West).
+
+## Northeast
+
+By just looking at the sentiment summaries, we cannot come to the conclusion on if there are more negative words compared to positive. The bing summary tells us there are 186 negatives compared to 106 positives. However, the nrc summary tells us that there are 187 negatives compared to 253 positives. The nrc summary also tell us that there are many words related to trust, fear, and anticipation. However, this is probably the same case in most regions when talking about climate change. We can gather from the afinn summary that there are more negative words than positive ones. This would agree with the bing analysis. Also, by looking at the word frequencies in the northeast articles we can see that they focus a lot on policy, using words such as government, united, city, republican, federal, cost, trump, biden, president. To make more conclusions on the northeast we must look at the sentiment analysis for the other regions of the United States. This is not that surprising due to the northeast being known as more democratic and more focused on politics than other regions of the United States. Also a reason for this could be that the New York Times had four articles included in this analysis, and being a big city newspaper that is widely known, it is more likely to talk about politics and policies.
+
+## Midwest
+
+Midwest: 
+Word frequency trends from Midwest articles suggest that the midwest is heavily concerned with how climate change is affecting the industry and practice of farming and agriculture. This is highlighted by the most frequent words: “farmers”, “organic”, “corn”, “agriculture”, etc.. In comparison with other regions, this focus on the implications climate change has on agriculture makes sense, as the Midwest is a primary region for farmland and agriculture in the United States.
+Moreover, from the Bing sentiment analysis, we can see that the majority of words fell into “negative” sentiment category — potentially implying a sense of overall belief that climate change is a real, severe threat. 
+
+anger - 44
+anticipation  - 59
+disgust  - 25    
+fear -    63     
+joy -  35
+Negative - 105
+Positive - 165
+Sadness - 33
+Surprise - 29
+Trust — 103
+
+## West
+
+Similar to the midwest, through word frequency, we see a focused concern over global warming factors most relevant to western climates and geographies. In this case, “fires” and “burning” are two frequently used words in western-published articles, which indicate a general sentiment of panic about the emergence of wildfires in these drier climates. Additionally, a concern with science, fact, and truth is also seen through our analysis, as “Science”, “scientists”, “scientific“, and “hope” were also among the top words quoted in these articles.
+70% of the words in these articles and opinion pieces (not including stop  words) were classified as negative under Bing sentiment analysis. This could lead to a generalized conclusion that the West is concerned over climate change and its environmental effects, yet hopeful about what science can contribute.
+
+
+Anger - 64 
+Anticipation - 68      
+Disgust  - 42
+Fear  -76        
+Joy - 39
+Negative - 155
+Positive - 191
+Sadness - 66
+Surprise - 35
+Trust - 111
+
+## South
+
+
+## Conclusion
 
 There were some similarities between all the regions. The categories of trust, fear, and anticipation had the highest frequency of words for all the regions. Also, the bing analysis for each region concluded that there were more negative than positive words. This shows that there is an overall belief that climate change is a bad thing that must be stopped. 
 
