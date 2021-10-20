@@ -10,6 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## West
+### Analysis:
+Similar to the midwest, through word frequency, we see a focused concern over global warming factors most relevant to western climates and geographies. In this case, “fires” and “burning” are two frequently used words in western-published articles, which indicate a general sentiment of panic about the emergence of wildfires in these drier climates. Additionally, a concern with science, fact, and truth is also seen through our analysis, as “Science”, “scientists”, “scientific“, and “hope” were also among the top words quoted in these articles.
+70% of the words in these articles and opinion pieces (not including stop  words) were classified as negative under Bing sentiment analysis. This could lead to a generalized conclusion that the West is concerned over climate change and its environmental effects, yet hopeful about what science can contribute.
+
 
 ```{r}
 library(tidyverse)
