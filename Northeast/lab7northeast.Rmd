@@ -1,0 +1,53 @@
+---
+title: "DS 3001 Lab 7"
+author: "Kate Douglass"
+date: "10/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gutenbergr)
+library(textdata)
+```
+
+# Reading in Articles - Northeast Region
+
+I copy and pasted articles into a text file.
+I have four from the New York Times, two from The Hartford Courant, two from The Keene Sentinental (NH) and two from Bangor Daily News (Maine).
+```{r}
+northeast<-read_lines("northeast.txt")
+```
+
+# Word Frequencies
+
+```{r}
+northeast<-tibble(northeast)
+northeast<-northeast%>%unnest_tokens(word,northeast)%>%anti_join(stop_words)%>%count(word, sort=TRUE)
+```
+
+# Sentiment Analysis
+
+```{r}
+northeast_afinn <- northeast %>%
+  inner_join(get_sentiments("afinn"))
+northeast_nrc <- northeast %>%
+  inner_join(get_sentiments("nrc"))
+northeast_bing <- northeast %>%
+  inner_join(get_sentiments("bing"))
+
+table(northeast_afinn$value)
+table(northeast_nrc$sentiment)
+table(northeast_bing$sentiment)
+```
+
+# Summary
+
+By just looking at the sentiment summaries, we cannot come to the conclusion on if there are more negative words compared to positive. The bing summary tells us there are 186 negatives compared to 106 positives. However, the nrc summary tells us that there are 187 negatives compared to 253 positives. There are also many words related to trust, fear, and anticipation. We can also gather from the afinn summary that there are more negative values than positive ones. This summary would agree with the bing. To make more conclusions on the northeast we must look at the sentiment analysis for the other regions of the United States.
