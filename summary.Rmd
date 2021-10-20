@@ -53,6 +53,21 @@ Trust - 111
 
 ## South
 
+The viewpoint on climate change in the southern United States is inconclusive. Sentiment analysis on a number of news and opinion articles from the region showed mixed results, with some systems showing a more-positive association and others showing a more-negative association. Neutral words with a high number of hits such as "oil", "gas", "world", "future", and "warming", do not yield much information either. This seems to imply an ambivalence towards the issue in the region, with some areas appearing to be more concerned than others. The one notable pattern that appeared was a strong association with politics (words such as "republican", "conservative", and "political"), indicating that residents of this region consider the topic to be highly charged.
+
+Many areas within the region are susceptible to the effects of climate change, including rising water levels and increased temperatures, but much of the south's economy hinges on the production of fuels which contribute to the greenhouse effect. Offshore oil in the Gulf of Mexico and Oil/Coal production in Texas are huge factors of the south's economy, which might explain the reluctance to take a stance for or against the issue.
+
+Anger - 44
+Anticipation - 71
+Disgust - 26
+Fear - 58
+Joy - 49
+Negative - 101
+Positive - 168
+Sadness - 33
+Surprise - 29
+Trust - 104
+
 
 ## Conclusion
 
