@@ -10,6 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Midwest
+### Analysis:
+Word frequency trends from Midwest articles suggest that the midwest is heavily concerned with how climate change is affecting the industry and practice of farming and agriculture. This is highlighted by the most frequent words: “farmers”, “organic”, “corn”, “agriculture”, etc.. In comparison with other regions, this focus on the implications climate change has on agriculture makes sense, as the Midwest is a primary region for farmland and agriculture in the United States.
+Moreover, from the Bing sentiment analysis, we can see that the majority of words fell into “negative” sentiment category — potentially implying a sense of overall belief that climate change is a real, severe threat. 
 
 ```{r}
 library(tidyverse)
@@ -56,6 +59,6 @@ table(midwest_sentiment_nrc$sentiment)
 
 View(midwest_sentiment_afinn)
 ```
- 
+b  
  
 
