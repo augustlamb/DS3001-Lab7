@@ -16,3 +16,4 @@ Each individual in our group was assigned one region to select 10 news articles 
 There were some similarities between all the regions. The categories of trust, fear, and anticipation had the highest frequency of words for all the regions. Also, the bing analysis for each region concluded that there were more negative than positive words. This shows that there is an overall belief that climate change is a bad thing that must be stopped. 
 
 While each region agreed on this overall idea, there were differences in the focuses of each region. The northeast focused more on politics and policies. The Midwest on farming and agriculture. The West on science and environmental effects. And the south was similar to the Northeast in that it focused on politics more than the other regions.
+
