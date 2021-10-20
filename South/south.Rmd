@@ -1,0 +1,62 @@
+---
+title: "South Sentiment Analysis"
+author: "August Lamb (abl6ywp)"
+date: "10/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gutenbergr)
+library(textdata)
+```
+
+
+### Fetch and Convert Articles
+```{r}
+south <- read_lines("./South/texas_master.txt")
+
+south2 <- as.tibble(south)
+south2 <- rename(south2, word = value)
+
+words <- south2 %>%
+  unnest_tokens(south2, word, token = "words")
+
+words <- rename(words, word = south2)
+
+# Remove stop words
+
+clean <- words %>%
+      anti_join(stop_words)
+```
+
+
+### Sentiment Analysis
+```{r}
+# Merge sets
+south_afinn <- clean %>%
+  inner_join(get_sentiments("afinn"))
+
+south_nrc <- clean %>%
+  inner_join(get_sentiments("nrc"))
+
+south_bing <- clean %>%
+  inner_join(get_sentiments("bing"))
+```
+
+```{r}
+# View results
+table(south_nrc$sentiment)
+table(south_bing$sentiment)
+
+ggplot(data = south_afinn, 
+       aes(x=value)
+        )+
+  geom_histogram()+
+  ggtitle("Climate Change Sentiment Range in Southern US")+
+  theme_minimal()
+```
+

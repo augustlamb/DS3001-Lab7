@@ -1,0 +1,58 @@
+---
+title: "text_lab"
+author: "Catherine Schuster"
+date: "10/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## West
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gutenbergr)
+library(textdata)
+save.image("tidytext.RData")
+```
+
+```{r}
+west <- read_lines("/Users/catherineschuster/Desktop/Fall 2021/DS 3001/DS-3001-Main/07_text_mining/DS3001-Lab7/West/west.txt")
+
+west <- tibble(west)
+View(west)
+
+west$west <- as.character(west$west)
+
+View(west)
+
+west <- west %>%
+  unnest_tokens(word, west)%>%
+  anti_join(stop_words)%>% 
+  count(word, sort=TRUE)
+
+View(west)
+```
+
+```{r}
+west_sentiment_afinn <- west %>%
+  inner_join(get_sentiments("afinn"))
+  
+west_sentiment_nrc <- west %>%
+  inner_join(get_sentiments("nrc"))
+
+west_sentiment_bing <- west %>%
+  inner_join(get_sentiments("bing"))
+
+
+table(west_sentiment_bing$sentiment)
+table(west_sentiment_nrc$sentiment)
+View(west_sentiment_afinn)
+```
+
+
+
