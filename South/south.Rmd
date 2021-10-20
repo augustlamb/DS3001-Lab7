@@ -17,7 +17,7 @@ library(textdata)
 
 ### Fetch and Convert Articles
 ```{r}
-south <- read_lines("./South/texas_master.txt")
+south <- read_lines("./texas_master.txt")
 
 south2 <- as.tibble(south)
 south2 <- rename(south2, word = value)
@@ -30,12 +30,16 @@ words <- rename(words, word = south2)
 # Remove stop words
 
 clean <- words %>%
-      anti_join(stop_words)
+      anti_join(stop_words)%>%
+      count(word, sort = TRUE)
+
+head(clean, 15)
+
 ```
 
 
 ### Sentiment Analysis
-```{r}
+```{r, results='hide'}
 # Merge sets
 south_afinn <- clean %>%
   inner_join(get_sentiments("afinn"))
@@ -47,7 +51,7 @@ south_bing <- clean %>%
   inner_join(get_sentiments("bing"))
 ```
 
-```{r}
+```{r, warning=FALSE}
 # View results
 table(south_nrc$sentiment)
 table(south_bing$sentiment)
@@ -58,5 +62,13 @@ ggplot(data = south_afinn,
   geom_histogram()+
   ggtitle("Climate Change Sentiment Range in Southern US")+
   theme_minimal()
+
+ggplot(clean[1:50,], aes(label = word, size = n)
+       ) +
+  geom_text_wordcloud() +
+  theme_minimal()
 ```
 
+The viewpoint on climate change in the southern United States is inconclusive. Sentiment analysis on a number of news and opinion articles from the region showed mixed results, with some systems showing a more-positive association and others showing a more-negative association. Neutral words with a high number of hits such as "oil", "gas", "world", "future", and "warming", do not yield much information either. This seems to imply an ambivalence towards the issue in the region, with some areas appearing to be more concerned than others. The one notable pattern that appeared was a strong association with politics (words such as "republican", "conservative", and "political"), indicating that residents of this region consider the topic to be highly charged.
+
+Many areas within the region are susceptible to the effects of climate change, including rising water levels and increased temperatures, but much of the south's economy hinges on the production of fuels which contribute to the greenhouse effect. Offshore oil in the Gulf of Mexico and Oil/Coal production in Texas are huge factors of the south's economy, which might explain the reluctance to take a stance for or against the issue.
